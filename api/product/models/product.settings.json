@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tetil": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "dec": {
+      "type": "richtext"
+    },
+    "pric": {
+      "type": "decimal"
+    },
+    "tmei": {
+      "type": "datetime"
+    },
+    "falkshep": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "url": {
+      "type": "uid"
+    },
+    "nameuid": {
+      "type": "email"
+    }
+  }
+}

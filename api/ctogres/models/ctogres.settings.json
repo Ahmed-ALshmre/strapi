@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ctogres",
+  "info": {
+    "name": "ctogres"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "numberid": {
+      "type": "integer"
+    },
+    "time": {
+      "type": "time"
+    },
+    "bool": {
+      "type": "boolean"
+    },
+    "uidd": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

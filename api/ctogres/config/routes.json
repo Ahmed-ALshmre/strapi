@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ctogres",
+      "handler": "ctogres.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ctogres/count",
+      "handler": "ctogres.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ctogres/:id",
+      "handler": "ctogres.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ctogres",
+      "handler": "ctogres.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ctogres/:id",
+      "handler": "ctogres.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ctogres/:id",
+      "handler": "ctogres.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
